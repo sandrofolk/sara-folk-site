@@ -1,0 +1,60 @@
+// custom.scss
+
+// Principais
+$vermelho-terra: rgb(96, 39, 39);
+$ocre: rgb(166, 69, 34);
+$rose-flamingo: rgb(190, 102, 102);
+$pele: rgb(242, 207, 179);
+// Secundárias
+$vermelho-escuro: rgb(48, 13, 15);
+$rose-medio: rgb(200, 120, 115);
+$pele-bronze: rgb(235, 190, 170);
+$laranja: rgb(207, 144, 72);
+$roxo: rgb(81, 46, 81);
+
+$primary:       $vermelho-terra;
+$secondary:     $pele;
+$light:         #f1f1f1;
+$dark:          #000000;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    // "primary":    $primary,
+    // "secondary":  $secondary,
+    // "success":    $success,
+    // "info":       $info,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    // "light":      $light,
+    // "dark":       $dark,
+    //
+    "vermelho-terra":   $vermelho-terra,
+  ),
+  $theme-colors
+);
+
+//then bootstrap & bootstrap-vue should be added after 
+//so that they inherit the custom SCSS variables
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+//all other custom scss files or css should be added here
+section.servicos {
+    padding-top: 30px;
+    // background-image: url('/img/patterns/patternrgb2.png');
+
+    .bg {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url('/img/grafia/grafismosrgb_2.png') bottom center;
+        background-size: cover;
+        opacity: .4;
+        width: 100%;
+        height: 100%;
+    }
+}
