@@ -14,7 +14,7 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
   /*
    ** Customize the progress-bar color
@@ -23,7 +23,12 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/scss/custom.scss'],
+  css: [
+    '@/assets/fonts/Fashion-Fetish/stylesheet.css',
+    '@/assets/fonts/Neo-Sans/stylesheet.css',
+    '@/assets/fonts/Calibri/stylesheet.css',
+    '@/assets/scss/custom.scss'
+  ],
   /*
    ** Plugins to load before mounting the App
    */
@@ -48,7 +53,7 @@ export default {
     '@nuxtjs/fontawesome'
   ],
   bootstrapVue: {
-    bootstrapCSS: false, 
+    bootstrapCSS: false,
     bootstrapVueCSS: false,
     icons: true
   },

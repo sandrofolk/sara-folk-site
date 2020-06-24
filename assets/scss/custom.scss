@@ -30,11 +30,20 @@ $theme-colors: map-merge(
     // "dark":       $dark,
     //
     "vermelho-terra":   $vermelho-terra,
+    "ocre":             $ocre,
+    "rose-flamingo":    $rose-flamingo,
+    "pele":             $pele,
+
+    'vermelho-escuro':  $vermelho-escuro,
+    'rose-medio':       $rose-medio,
+    'pele-bronze':      $pele-bronze,
+    'laranja':          $laranja,
+    'roxo':             $roxo
   ),
   $theme-colors
 );
 
-//then bootstrap & bootstrap-vue should be added after 
+//then bootstrap & bootstrap-vue should be added after
 //so that they inherit the custom SCSS variables
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
@@ -45,7 +54,7 @@ section.servicos {
     // background-image: url('/img/patterns/patternrgb2.png');
 
     .bg {
-        position: absolute;
+        position: fixed;
         z-index: -1;
         top: 0;
         bottom: 0;
@@ -57,4 +66,31 @@ section.servicos {
         width: 100%;
         height: 100%;
     }
+}
+
+body {
+  font-family: 'Neo Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Fashion Fetish', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+#menu {
+  background-image: linear-gradient(to bottom, $vermelho-terra , $rose-flamingo);
+
+  .nav-item {
+    padding: 0 5px;
+
+    .dropdown-item:hover, .dropdown-item:focus {
+      //color: #16181b;
+      //text-decoration: none;
+      background-color: $pele;
+    }
+  }
+
 }

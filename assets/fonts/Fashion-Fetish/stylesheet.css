@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetishLight.eot');
+    src: url('FashionFetishLight.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetishLight.woff2') format('woff2'),
+        url('FashionFetishLight.woff') format('woff'),
+        url('FashionFetishLight.ttf') format('truetype'),
+        url('FashionFetishLight.svg#FashionFetishLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish Small Caps';
+    src: url('FashionFetishSmallCaps.eot');
+    src: url('FashionFetishSmallCaps.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetishSmallCaps.woff2') format('woff2'),
+        url('FashionFetishSmallCaps.woff') format('woff'),
+        url('FashionFetishSmallCaps.ttf') format('truetype'),
+        url('FashionFetishSmallCaps.svg#FashionFetishSmallCaps') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish Outline';
+    src: url('Fashion-Fetish-Outline.eot');
+    src: url('Fashion-Fetish-Outline.eot?#iefix') format('embedded-opentype'),
+        url('Fashion-Fetish-Outline.woff2') format('woff2'),
+        url('Fashion-Fetish-Outline.woff') format('woff'),
+        url('Fashion-Fetish-Outline.ttf') format('truetype'),
+        url('Fashion-Fetish-Outline.svg#Fashion-Fetish-Outline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetish.eot');
+    src: url('FashionFetish.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetish.woff2') format('woff2'),
+        url('FashionFetish.woff') format('woff'),
+        url('FashionFetish.ttf') format('truetype'),
+        url('FashionFetish.svg#FashionFetish') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetishHeavy.eot');
+    src: url('FashionFetishHeavy.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetishHeavy.woff2') format('woff2'),
+        url('FashionFetishHeavy.woff') format('woff'),
+        url('FashionFetishHeavy.ttf') format('truetype'),
+        url('FashionFetishHeavy.svg#FashionFetishHeavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetishLight-Italic.eot');
+    src: url('FashionFetishLight-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetishLight-Italic.woff2') format('woff2'),
+        url('FashionFetishLight-Italic.woff') format('woff'),
+        url('FashionFetishLight-Italic.ttf') format('truetype'),
+        url('FashionFetishLight-Italic.svg#FashionFetishLight-Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetish-Italic.eot');
+    src: url('FashionFetish-Italic.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetish-Italic.woff2') format('woff2'),
+        url('FashionFetish-Italic.woff') format('woff'),
+        url('FashionFetish-Italic.ttf') format('truetype'),
+        url('FashionFetish-Italic.svg#FashionFetish-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Fashion Fetish';
+    src: url('FashionFetish_1.eot');
+    src: url('FashionFetish_1.eot?#iefix') format('embedded-opentype'),
+        url('FashionFetish_1.woff2') format('woff2'),
+        url('FashionFetish_1.woff') format('woff'),
+        url('FashionFetish_1.ttf') format('truetype'),
+        url('FashionFetish_1.svg#FashionFetish') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
