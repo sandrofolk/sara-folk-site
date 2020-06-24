@@ -50,7 +50,8 @@ export default {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/fontawesome'
+    '@nuxtjs/fontawesome',
+    ['vue-scrollto/nuxt', { duration: 300 }],
   ],
   bootstrapVue: {
     bootstrapCSS: false,
