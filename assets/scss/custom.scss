@@ -12,35 +12,34 @@ $pele-bronze: rgb(235, 190, 170);
 $laranja: rgb(207, 144, 72);
 $roxo: rgb(81, 46, 81);
 
-$primary:       $vermelho-terra;
-$secondary:     $pele;
-$light:         #f1f1f1;
-$dark:          #000000;
+$primary: $vermelho-terra;
+$secondary: $pele;
+$light: #f1f1f1;
+$dark: #000000;
 
 $theme-colors: () !default;
 $theme-colors: map-merge(
-  (
-    // "primary":    $primary,
-    // "secondary":  $secondary,
-    // "success":    $success,
-    // "info":       $info,
-    // "warning":    $warning,
-    // "danger":     $danger,
-    // "light":      $light,
-    // "dark":       $dark,
-    //
-    "vermelho-terra":   $vermelho-terra,
-    "ocre":             $ocre,
-    "rose-flamingo":    $rose-flamingo,
-    "pele":             $pele,
-
-    'vermelho-escuro':  $vermelho-escuro,
-    'rose-medio':       $rose-medio,
-    'pele-bronze':      $pele-bronze,
-    'laranja':          $laranja,
-    'roxo':             $roxo
-  ),
-  $theme-colors
+    (
+      // "primary":    $primary,
+      // "secondary":  $secondary,
+      // "success":    $success,
+      // "info":       $info,
+      // "warning":    $warning,
+      // "danger":     $danger,
+      // "light":      $light,
+      // "dark":       $dark,
+      //
+      "vermelho-terra": $vermelho-terra,
+      "ocre": $ocre,
+      "rose-flamingo": $rose-flamingo,
+      "pele": $pele,
+      'vermelho-escuro': $vermelho-escuro,
+      'rose-medio': $rose-medio,
+      'pele-bronze': $pele-bronze,
+      'laranja': $laranja,
+      'roxo': $roxo
+    ),
+    $theme-colors
 );
 
 //then bootstrap & bootstrap-vue should be added after
@@ -50,26 +49,32 @@ $theme-colors: map-merge(
 
 //all other custom scss files or css should be added here
 section.servicos {
-    padding-top: 30px;
-    // background-image: url('/img/patterns/patternrgb2.png');
+  //padding-top: 30px;
+  // background-image: url('/img/patterns/patternrgb2.png');
 
-    .bg {
-        position: fixed;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: url('/img/grafia/grafismosrgb_2.png') bottom center;
-        background-size: cover;
-        opacity: .4;
-        width: 100%;
-        height: 100%;
-    }
+  .bg {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('/img/grafia/grafismosrgb_2.png') bottom center;
+    background-size: cover;
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+  }
 
-    img.service {
-      border-radius: 10%;
-    }
+  img.service {
+    border-radius: 10%;
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), $rose-flamingo, rgba(0, 0, 0, 0));
 }
 
 body {
@@ -78,14 +83,13 @@ body {
   font-style: normal;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Fashion Fetish', sans-serif;
   font-weight: bold;
-  font-style: normal;
 }
 
 #menu {
-  background-image: linear-gradient(to bottom, $vermelho-terra , $rose-flamingo);
+  background-image: linear-gradient(to bottom, $vermelho-terra, $rose-flamingo);
 
   .nav-item {
     padding: 0 5px;

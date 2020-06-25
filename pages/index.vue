@@ -59,20 +59,29 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <section class="servicos" style="min-height: 300px;">
+    <section class="servicos mb-5" style="min-height: 300px;">
       <div class="bg"></div>
       <b-container fluid="xl">
-        <b-row :key="s.title" v-for="s in services" align-h="center" class="mb-5">
-          <b-col cols="10" class="mb-1">
-            <h1 :id="s.name" v-text="s.title"/>
-          </b-col>
-          <b-col cols="10" sm="6" md="4" :order="s.order">
-            <b-img :src="s.img" thumbnail fluid-grow alt="" class="service"></b-img>
-          </b-col>
-          <b-col cols="12" sm="6" align-self="center">
-            <div v-html="s.description"/>
-          </b-col>
-        </b-row>
+        <div :key="s.title" v-for="(s, index) in services" class="mt-2 mb-3">
+          <b-row align-h="center" class="pt-5" :id="s.name">
+            <b-col cols="12" md="10" class="mb-1 text-center" :class="[s.order === 1 ? 'text-sm-right' : 'text-sm-left']">
+              <h4 v-text="s.title" />
+            </b-col>
+            <b-col cols="10" sm="6" md="4" :order-sm="s.order">
+              <b-img :src="s.img" thumbnail fluid-grow alt="" class="service"></b-img>
+            </b-col>
+            <b-col cols="11" sm="6" align-self="center">
+              <div v-html="s.description"/>
+            </b-col>
+            <b-col cols="12" v-if="index !== Object.keys(services).length - 1" order="2"><hr></b-col>
+          </b-row>
+<!--          <b-row>-->
+<!--            <b-col cols="12">-->
+<!--              <tr class="mt-2 mb-3" />-->
+<!--              <tr v-if="index !== Object.keys(services).length - 1" />-->
+<!--            </b-col>-->
+<!--          </b-row>-->
+        </div>
       </b-container>
     </section>
   </div>
