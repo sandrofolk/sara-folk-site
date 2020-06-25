@@ -52,6 +52,7 @@ export default {
     '@nuxtjs/dotenv',
     '@nuxtjs/fontawesome',
     ['vue-scrollto/nuxt', { duration: 300 }],
+    ['nuxt-facebook-pixel-module', { pixelId: '682085325671722' }],
   ],
   bootstrapVue: {
     bootstrapCSS: false,
